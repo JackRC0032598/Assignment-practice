@@ -33,5 +33,22 @@ namespace Assignment_practice
                 MessageBox.Show("Error - Type in two numbers:");
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // Calculate the area of the Triangle
+            try
+            {
+                double width, height, area;
+                width = Convert.ToDouble(textBox3.Text);
+                height = Convert.ToDouble(textBox4.Text);
+                area = width * height / 2;
+                label6.Text = "Area = " + area;
+            }
+            catch
+            {
+                MessageBox.Show("Error - Type in two numbers:");
+            }
+        }
     }
 }
