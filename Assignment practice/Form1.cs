@@ -50,5 +50,21 @@ namespace Assignment_practice
                 MessageBox.Show("Error - Type in two numbers:");
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            // Calculate the area of a Circle
+            try
+            {
+                double radius, area;
+                radius = Convert.ToDouble(textBox5.Text);
+                area = radius * radius * Math.PI;
+                label8.Text = "Area =" + area;
+            }
+            catch
+            {
+                MessageBox.Show("Error - Type in two numbers:");
+            }
+        }
     }
 }
